@@ -1,0 +1,30 @@
+###
+GET http://localhost:5062/games
+
+###
+GET http://localhost:5062/games/1
+
+###
+POST http://localhost:5062/games
+Content-Type: application/json
+
+{
+  "name": "FIFA 2024 Part 2",
+  "genreId": 2,
+  "price": 10,
+  "releaseDate": "2022-10-10"
+}
+
+###
+PUT http://localhost:5062/games/2
+Content-Type: application/json
+
+{
+  "name": "Modern Combat",
+  "genreId": 1,
+  "price": 20.99,
+  "releaseDate": "2022-04-20"
+}
+
+### 
+DELETE http://localhost:5062/games/1
